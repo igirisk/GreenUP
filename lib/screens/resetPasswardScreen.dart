@@ -104,8 +104,9 @@ class ResetPasswordScreen extends StatelessWidget {
                                       return "Please provide an email address.";
                                     } else if (!value.contains('@')) {
                                       return "Please provide a valid email address.";
-                                    } else
+                                    } else {
                                       return null;
+                                    }
                                   },
                                   onSaved: (value) {
                                     email = value;
@@ -119,7 +120,7 @@ class ResetPasswordScreen extends StatelessWidget {
                                   style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.black,
                                     padding: const EdgeInsets.fromLTRB(
-                                        120, 15, 120, 15),
+                                        85, 15, 85, 15),
                                   ),
                                   onPressed: () {
                                     reset(context);
